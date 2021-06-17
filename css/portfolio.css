@@ -162,20 +162,36 @@ header{
 
 
 /* PRESENTATION */
+.hidden{
+    visibility: hidden;
+}
+
+.separate{
+    margin: 5rem 0;
+}
+
+@media screen and (min-width: 1200px) {
+    .hidden{
+        visibility: visible;
+    }
+    
+    .separate{
+        margin: 0;
+    }
+}
+
 .presentation{
     display: grid;
-    margin-top: 5rem;
 }
 
 .presentation1{
     display: grid;
     grid-template-rows: 30% 70%;
-    grid-row-gap: 10rem;
+    gap: 3rem;
 }
 
 .presentation1-right{
     display: grid;
-    gap: 10.5rem;
     max-width: 36rem;
 }
 
@@ -189,8 +205,15 @@ header{
 }
 
 @media screen and (min-width: 1200px) {
+    .presentation{
+        margin-top: 5rem;
+    }
+    .presentation1-right{
+        gap: 10.5rem;
+    }
     .presentation1{
         grid-template-columns: 60% 40%;
+        grid-row-gap: 10rem;
     }
     .presentation1-desc{
         text-align: left;
@@ -199,14 +222,14 @@ header{
 
 .presentation2{
     display: grid;
-    grid-template-rows: 70% 30%;
-    grid-row-gap: 10rem;
+    grid-template-rows: 30% 70%;
+    grid-row-gap: 3rem;
     grid-column-gap: 12.5rem;
 }
 
 .presentation2-right{
     display: grid;
-    gap: 10.5rem;
+    order: 1;
     max-width: 36rem;
 }
 
@@ -222,6 +245,11 @@ header{
 @media screen and (min-width: 1200px) {
     .presentation2{
         grid-template-columns: 40% 60%;
+        grid-row-gap: 10rem;
+    }
+    .presentation2-right{
+        gap: 10.5rem;
+        order: 0;
     }
     .presentation2-desc{
         text-align: left;
