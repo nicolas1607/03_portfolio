@@ -2,7 +2,7 @@
 /* GENERIQUE */
 body{
     font-family: Public Sans, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 3rem;
     background-color: #FAFAFA;
     color: #33323D;
@@ -160,95 +160,70 @@ header{
 
 
 
-/* HERO */
-.hero{
-    position: relative;
-    margin: auto;
-    max-width: 111rem;
-    margin-bottom: 40rem;
-}
-
-@media screen and (min-width: 1200px) {
-    .hero{
-        position: relative;
-        margin: auto;
-        max-width: 111rem;
-        margin-bottom: 15rem;
-    }
-}
-
-.hero-text{
-    position: absolute;
-    background-color: #FAFAFA;
-    padding: 5.5rem;
-}
-
-.hero-title{
-    margin-bottom: 3.8rem;
-    /* max-width: 20rem; */
-}
-
-@media screen and (min-width: 1200px) {
-    .hero-text{
-        max-width: 44.5rem;
-        margin-top: -34rem;
-        padding: 5.5rem 5.5rem 0 0;
-    }
-    .hero-title{
-        margin-bottom: 3.8rem;
-        max-width: 39rem;
-    }
-}
-
-.hero-button{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 20rem;
-    background-color: #203A4C;
-}
-
-.hero-button img{
-    margin: auto;
-}
-
-.hero-button p{
-    font-size: 1.2rem;
-    color: #FFFFFF;
-    margin: auto;
-}
-
-
-
-
 
 /* PRESENTATION */
 .presentation{
     display: grid;
-    grid-template-rows: 30% 70%;
+    margin-top: 5rem;
 }
 
-.presentation-right{
+.presentation1{
     display: grid;
-    gap: 5rem;
+    grid-template-rows: 30% 70%;
+    grid-row-gap: 10rem;
+}
+
+.presentation1-right{
+    display: grid;
+    gap: 10.5rem;
     max-width: 36rem;
 }
 
-.presentation-text{
+.presentation1-text{
     display: grid;
     gap: 2rem;
 }
 
-.presentation-desc{
+.presentation1-desc{
     text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
-    .presentation{
+    .presentation1{
         grid-template-columns: 60% 40%;
-        margin-bottom: 15.4rem;
     }
-    .presentation-desc{
+    .presentation1-desc{
+        text-align: left;
+    }
+}
+
+.presentation2{
+    display: grid;
+    grid-template-rows: 70% 30%;
+    grid-row-gap: 10rem;
+    grid-column-gap: 12.5rem;
+}
+
+.presentation2-right{
+    display: grid;
+    gap: 10.5rem;
+    max-width: 36rem;
+}
+
+.presentation2-text{
+    display: grid;
+    gap: 2rem;
+}
+
+.presentation2-desc{
+    text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+    .presentation2{
+        grid-template-columns: 40% 60%;
+    }
+    .presentation2-desc{
         text-align: left;
     }
 }
@@ -300,12 +275,14 @@ footer{
 
 .navigation-list{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .navigation-item{
     margin-left: .5rem;
     margin-right: .5rem;
+    text-align: center;
 }
 
 .navigation-item a{
@@ -336,6 +313,11 @@ footer{
     .navigation{
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
+    }
+    .navigation-list{
+        flex-direction: row;
+        margin: 0;
     }
     .navigation-item{
         width: 11rem;
