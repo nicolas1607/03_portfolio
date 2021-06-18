@@ -339,10 +339,10 @@ list-style: none;
     .arrow-right{
         padding-left: 5rem;
     }
-    .nav-left div h4, p{
+    .nav-left div h4,.nav-left div p{
         text-align: left;
     }
-    .nav-right div h4, p{
+    .nav-right div h4,.nav-right div p{
         text-align: right;
     }
 }

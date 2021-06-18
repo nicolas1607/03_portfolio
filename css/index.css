@@ -216,6 +216,12 @@ header{
     padding: 0 2rem;
 }
 
+.hero-text{
+    position: static;
+    background-color: #FAFAFA;
+    padding: 5.5rem;
+}
+
 @media screen and (min-width: 1200px) {
     .hero{
         margin: auto;
@@ -227,10 +233,15 @@ header{
     }
 }
 
-.hero-text{
-    position: static;
-    background-color: #FAFAFA;
-    padding: 5.5rem;
+@media screen and (min-width: 1200px) {
+    .hero{
+        margin: auto;
+        max-width: 111rem;
+        margin-bottom: 15rem;
+    }
+    .hero-img{
+        padding: 0;
+    }
 }
 
 .hero-title{
@@ -312,7 +323,6 @@ header{
     .presentation{
         grid-template-columns: 60% 40%;
         padding-top: 10rem;
-        margin-bottom: 15.4rem;
     }
     .presentation-desc{
         text-align: left;
