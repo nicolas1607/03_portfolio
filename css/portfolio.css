@@ -47,6 +47,7 @@ a.button{
     display: flex;
     justify-content: center;
     margin: auto;
+    width: 20rem;
 }
 
 a.button:hover{
