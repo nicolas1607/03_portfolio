@@ -33,7 +33,7 @@ img{
     max-width: 100%;
 }
 
-button{
+a.button{
     background-color: #FAFAFA;
     box-shadow: 0.2px 0.2px 2px #33323D;
     font-size: 1.2rem;
@@ -42,7 +42,13 @@ button{
     width: 20rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+a.button:hover{
+    background-color: #33323D;
+    color: white;
 }
 
 @media screen and (min-width: 1200px) {
@@ -278,6 +284,13 @@ header{
     
     .arrow-right{
         padding-left: 5rem;
+    }
+    .nav-left a h4,p{
+        text-align: left;
+    }
+    
+    .nav-right a h4,p{
+        text-align: right;
     }
 }
 

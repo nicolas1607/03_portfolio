@@ -188,6 +188,7 @@ hr{
     }
     .touch{
         grid-template-columns: 2fr 3fr;
+        grid-template-rows: 1fr;
     }
     .touch-desc{
         margin-bottom: 2rem;
@@ -215,10 +216,6 @@ hr{
     width: 20rem;
     color: white;
     background-color: #203A4C;
-}
-
-@media screen and (min-width: 1200px) {
-    
 }
 
 .label input::placeholder,
