@@ -257,6 +257,20 @@ header{
     align-items: center;
 }
 
+.nav-left:hover{
+    color: gray;
+    transform: translateX(-3rem);
+    transition: .3s;
+    transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.nav-right:hover{
+    color: gray;
+    transform: translateX(3rem);
+    transition: .3s;
+    transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045)
+}
+
 .arrow{
     max-height: 5rem;
 }
